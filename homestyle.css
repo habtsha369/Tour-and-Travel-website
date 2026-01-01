@@ -1,0 +1,376 @@
+/* Reset margin/padding for header and body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  width: 100%;                   
+  display: flex;
+  align-items: center;           
+  justify-content: space-between; 
+  padding: 10px 50px;            
+  background: #0b77db;           
+  box-shadow: 0 2px 5px rgba(233, 230, 230, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 70px;                  /* compact height */
+}
+
+/* Logo */
+header img {
+ height: 60px;             
+  width: auto;              
+  object-fit: contain;      
+  display: block;   
+}
+
+/* Navbar container */
+.nav-bar {
+  display: flex;
+  gap: 15px;                     /* space between buttons */
+  align-items: center;
+}
+
+/* Navbar buttons */
+.nav-bar button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.nav-bar button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 16px;
+  display: inline-block;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.nav-bar button a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+}
+
+/* Register button */
+#register-btn button {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#register-btn button a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+#register-btn button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+
+/* About Us Section Styles */
+.about-us {
+ 
+  padding: 60px 20px;
+  
+}
+
+.about-us .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-us h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+.about-us h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333333;
+  text-align: justify;
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .about-us h1 {
+    font-size: 28px;
+  }
+  .about-us h2 {
+    font-size: 22px;
+  }
+  .about-us p {
+    font-size: 16px;
+  }
+}
+
+
+/* Body */
+body {
+    background-image: url('images/1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    position: relative;
+}
+
+/* Content Sections */
+#rusia,
+#lalibela,
+#newyork,
+#personal,
+#relational,
+#travel,
+#messaging {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 1000px;
+}
+
+/* Ticketing */
+#tikatig-service {
+   
+    color: rgb(10, 9, 9);
+    padding: 15px;
+}
+
+/* Tables */
+.tabels {
+    width: 100%; /* instead of 10px */
+    border-collapse: collapse;
+}
+
+/* Footer */
+footer {
+    color: rgb(7, 7, 7);
+    background-color: rgb(181, 175, 189);
+    padding: 20px;
+    text-align: center;
+}
+
+#footer-table {
+    width: 100%;
+    max-width: 1200px; /* instead of 30cm */
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+/* -------------------------
+   Responsive Media Queries
+-------------------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+    header {
+        text-align: center;
+    }
+
+    #bottum-header {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #footer-table {
+        display: block;
+        width: 100%;
+    }
+
+    #footer-table td {
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .tabels {
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    #bottum-header {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #footer-table td {
+        font-size: 14px;
+    }
+
+    .tabels {
+        font-size: 12px;
+    }
+}
+
+
+
+
+/* General Form Box */
+.form-box {
+  width: 400px;
+  margin: 50px auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Top Section */
+.form-box .top {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  padding: 30px 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.form-box .top h2 {
+  margin: 10px 0 0;
+  font-size: 28px;
+}
+
+.form-box .top span {
+  font-size: 14px;
+}
+
+.form-box .top a {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Forms */
+.form-box form {
+  padding: 30px 20px;
+}
+
+/* Input Boxes */
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.input-box input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+.input-box i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+}
+
+/* Submit Button */
+.submit {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit:hover {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+}
+
+/* Two Column Section */
+.two-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+.two-col .one,
+.two-col .two a {
+  color: #555;
+}
+
+.two-col a {
+  color: #4facfe;
+  text-decoration: none;
+}
+
+.two-col a:hover {
+  text-decoration: underline;
+}
+
+/* Two Input Fields Side by Side */
+.two-forms {
+  display: flex;
+  gap: 15px;
+}
+
+.two-forms .input-box {
+  flex: 1;
+}
+
+/* Responsive */
+@media screen and (max-width: 450px) {
+  .form-box {
+    width: 90%;
+  }
+  .two-forms {
+    flex-direction: column;
+  }
+}
+
+

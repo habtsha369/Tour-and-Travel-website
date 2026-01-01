@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+ <head>
+        <title>Signin</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" href="homestyle.css">
+    <header>
+    <img src="images/liyu_logo.png" alt="logo">
+    <div class="nav-bar">
+        <button><a href="homepage.html">Home</a></button>
+        <button><a href="aboutus.html">About us</a></button>
+        <button><a href="contacts.html">Contacts</a></button>
+        <button><a href="destination.html">Destination</a></button>
+    </div>
+    <div id="register-btn">
+       
+    </div>
+</header>
+           <div class="form-box">
+        <!-- Sign In Form -->
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></span>
+                <h2>Login</h2>
+            </div>
+            <form>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Username or Email">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Sign In">
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="login-check">
+                        <label for="login-check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="#">Forgot password?</a></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- Registration Form -->
+        <div class="register-container" id="register" style="display: none;">
+            <div class="top">
+                <span>Have an account? <a href="#" onclick="showSignIn()">Login</a></span>
+                <h2>Sign Up</h2> <!-- Moved here -->
+            </div>
+            <form>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Firstname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Lastname">
+                        <i class="bx bx-user"></i>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Email">
+                    <i class="bx bx-envelope"></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" class="input-field" placeholder="Password">
+                    <i class="bx bx-lock-alt"></i>
+                </div>
+                <div class="input-box">
+                    <center>
+                    <p>
+                        <button><a href="signup2.html">Next</a></button>
+                    </p>
+                </center>
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="register-check">
+                        <label for="register-check"> Remember Me</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="terms.html" class="link" active>Terms & conditions</a></label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>     
+              
+       
+        <br/> 
+        <br/>
+        <table>
+                <tr>
+                    <td>
+                        <img src="images/EA2.jpg" width="300" height="200" alt="airport">
+                    </td>
+                    <td id="tikatig-service">
+                    <center>  
+                        <h2>Ethiopian Airlines Ticketing Service</h2>
+                    </center>      
+                        <pp>
+                            Ethiopian Airlines offers reliable and efficient ticketing services, making it easy for travelers to book their flights. 
+                            With a wide range of destinations and flexible booking options, Ethiopian Airlines ensures that your travel experience 
+                            is smooth and hassle-free. Whether you're flying domestically or internationally, you can count on Ethiopian Airlines for 
+                            the best in-class service and support.
+                        </pp>
+                        <button><a href="https://www.ethiopianairlines.com/en/ticketing" class="ticket-button" target="_blank">Get Your Ticket</a></button>
+                    </td>
+                </tr>
+         </table> 
+        <footer>
+        <center>    
+            <table id="footer-table">
+                <pre>
+                    <td id="links">
+                        <h3>Quick links</h3>
+                        <p>
+                            <a href="homepage.html">Home</a><br/>
+                            <a href="aboutus.html">About us</a></aAbout><br/>
+                            <a href="signup.html">signup</a><br/>
+                        </p>
+                    </td>
+                    <td id="contacts">
+                        <h3>Contact us</h3>
+                        <p>
+                            Email:- <a href="mailtoLiyu123@gmail.com">Liyu123@gmail.com</a><br/>
+                            Phone:- +251945636731<br/>
+                            Address:-Zewditu Street<br/>
+                            Addis Ababa,Ethiopia
+                        </p>
+                    </td>
+                    <td id="follow-us">
+                        <h3>Follow us</h3>
+                        <p>
+                            <a href="https://x.com/habtu" target="_blank">X</a><br/><br/>
+                            <a href="https://www.facebook.com/ermiasmazengia" target="_blank">Facebook</a><br/>
+                            <a href="https://www.telegram.com/H3B6M9" target="_blank">Telegram</a><br/>
+                            <a href="https://www.linkedin.com/in/habtsha369">Linkedin</a><br/>
+                        </p>
+                    </td>
+            </table> 
+        </center>       
+        </footer> 
+        <script> // Show Sign Up Form
+function showSignUp() {
+  document.getElementById("login").style.display = "none";
+  document.getElementById("register").style.display = "block";
+}
+
+// Show Login Form
+function showSignIn() {
+  document.getElementById("register").style.display = "none";
+  document.getElementById("login").style.display = "block";
+}
+</script>  
+   </body>      
+</html>
